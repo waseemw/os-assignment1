@@ -1,0 +1,5 @@
+---Clock: 0---
+Program done
+
+Average turnaround time: NaN
+Average wait time time: NaN
