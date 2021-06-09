@@ -6,12 +6,13 @@ public class Schedule implements Closeable {
     private final int QUANTUM = 10;
     private FileWriter output;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         try (Schedule schedule = new Schedule(openFileAndCreateTaskList(args[1]))) {
             schedule.runFunction(args[0]);
             System.out.println("Done! Check output.txt for the result");
         } catch (IOException e) {
-            System.out.println("Unable to access files. Exiting...");;
+            System.out.println("Unable to access files. Exiting...");
+            ;
         } catch (Exception e) {
             System.out.println("Unknown error has occurred. Exiting...");
         }
@@ -223,6 +224,8 @@ public class Schedule implements Closeable {
                     i--;
                 }
                 ArrayList<Task> newArrival = getArrivedTasks();
+                if (newArrival.isEmpty() && arrivedTasks.isEmpty())
+                    newArrival = getArrivedTasksOrIncreaseTime();
                 newArrival.sort(comparator);
                 arrivedTasks.addAll(newArrival);
             }

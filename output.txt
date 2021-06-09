@@ -1,5 +1,93 @@
 ---Clock: 0---
+---Idle time: 2---
+
+---Clock: 2---
+Will run task: T4
+Priority: 3
+Burst: 15
+Turnaround Time: 10
+Waiting Time: 0
+
+---Clock: 12---
+Will run task: T2
+Priority: 2
+Burst: 25
+Turnaround Time: 18
+Waiting Time: 8
+
+---Clock: 22---
+Will run task: T5
+Priority: 10
+Burst: 10
+Turnaround Time: 27
+Waiting Time: 17
+Task T5 finished
+
+---Clock: 32---
+Will run task: T3
+Priority: 3
+Burst: 25
+Turnaround Time: 36
+Waiting Time: 26
+
+---Clock: 42---
+Will run task: T4
+Priority: 3
+Burst: 5
+Turnaround Time: 45
+Waiting Time: 40
+Task T4 finished
+
+---Clock: 47---
+Will run task: T2
+Priority: 2
+Burst: 15
+Turnaround Time: 53
+Waiting Time: 43
+
+---Clock: 57---
+Will run task: T3
+Priority: 3
+Burst: 15
+Turnaround Time: 61
+Waiting Time: 51
+
+---Clock: 67---
+Will run task: T2
+Priority: 2
+Burst: 5
+Turnaround Time: 68
+Waiting Time: 63
+Task T2 finished
+
+---Clock: 72---
+Will run task: T3
+Priority: 3
+Burst: 5
+Turnaround Time: 71
+Waiting Time: 66
+Task T3 finished
+
+---Clock: 77---
+---Idle time: 923---
+
+---Clock: 1000---
+Will run task: T1
+Priority: 4
+Burst: 20
+Turnaround Time: 10
+Waiting Time: 0
+
+---Clock: 1010---
+Will run task: T1
+Priority: 4
+Burst: 10
+Turnaround Time: 20
+Waiting Time: 10
+Task T1 finished
+
+---Clock: 1020---
 Program done
 
-Average turnaround time: NaN
-Average wait time time: NaN
+Average turnaround time: 83.8
+Average wait time time: 64.8
